@@ -1,0 +1,7 @@
+HOW TO RUN
+==========
+
+1. Go to the project root directory
+2. Open the project using MelbourneBikeShare.xcworkspace
+   !!WARNING!! Make sure to open .xcworkspace instead of .xcodeproj
+3. Run

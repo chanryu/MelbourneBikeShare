@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCameraPosition</key>
+	<dict>
+		<key>latitude</key>
+		<real>-37.8132</real>
+		<key>longitude</key>
+		<real>144.963</real>
+		<key>zoom</key>
+		<integer>13</integer>
+	</dict>
+	<key>GoogleMapsAPIKey</key>
+	<string>AIzaSyApDqkiU5dS749EI9xLJxMTAzTVgQPUq0Q</string>
+	<key>BikeShareUrl</key>
+	<string>https://data.melbourne.vic.gov.au/api/views/tdvh-n9dv/rows.json?accessType=DOWNLOAD</string>
+</dict>
+</plist>

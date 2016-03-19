@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB69740D096E5329A6B6161C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 560D5736E1D6776C068110CA /* libPods.a */; };
+		C773F3501AA6EF9B82ED7DC9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 560D5736E1D6776C068110CA /* libPods.a */; };
+		D80150EF1C8B31EB008D189A /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = D80150EE1C8B31EB008D189A /* Settings.plist */; };
+		D80150F11C8B3340008D189A /* MBSSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80150F01C8B3340008D189A /* MBSSettings.swift */; };
+		D80150F41C8BC158008D189A /* MBSBikeStationMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80150F31C8BC158008D189A /* MBSBikeStationMarker.swift */; };
+		D80150F61C8BF252008D189A /* MBSBikeStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80150F51C8BF252008D189A /* MBSBikeStation.swift */; };
+		D823C52F1C92A07F00B66C03 /* MBSSuggestionBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D823C52E1C92A07F00B66C03 /* MBSSuggestionBoxTests.swift */; };
+		D826D3121C89AA8C000BE845 /* MBSSuggestionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D826D3111C89AA8C000BE845 /* MBSSuggestionBox.swift */; };
+		D854AE871C8C479300644F0E /* MBSSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D854AE861C8C479300644F0E /* MBSSettingsTests.swift */; };
+		D854AE891C8C49F100644F0E /* MBSBikeStationMarkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D854AE881C8C49F100644F0E /* MBSBikeStationMarkerTests.swift */; };
+		D85D16D11C88F9CA00A8607B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D16D01C88F9CA00A8607B /* AppDelegate.swift */; };
+		D85D16D31C88F9CA00A8607B /* MBSBikeStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85D16D21C88F9CA00A8607B /* MBSBikeStationViewController.swift */; };
+		D85D16D61C88F9CA00A8607B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85D16D41C88F9CA00A8607B /* Main.storyboard */; };
+		D85D16D81C88F9CA00A8607B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85D16D71C88F9CA00A8607B /* Assets.xcassets */; };
+		D85D16DB1C88F9CA00A8607B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85D16D91C88F9CA00A8607B /* LaunchScreen.storyboard */; };
+		D87ADB8B1C8C5FFF00315E41 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D87ADB8A1C8C5FFF00315E41 /* Localizable.strings */; };
+		D87ADB8D1C8C62F700315E41 /* MBSAnimationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87ADB8C1C8C62F700315E41 /* MBSAnimationButton.swift */; };
+		D8A7D3D51C8928E30020D959 /* MBSDatasetFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7D3D41C8928E30020D959 /* MBSDatasetFetcher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D85D16E21C88F9CA00A8607B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D85D16C51C88F9CA00A8607B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D85D16CC1C88F9CA00A8607B;
+			remoteInfo = MelbourneBikeShare;
+		};
+		D85D16ED1C88F9CA00A8607B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D85D16C51C88F9CA00A8607B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D85D16CC1C88F9CA00A8607B;
+			remoteInfo = MelbourneBikeShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		560D5736E1D6776C068110CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		978D70CA3086EEC0350774A7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9E2FE1E281849D9028978173 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D80150EE1C8B31EB008D189A /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		D80150F01C8B3340008D189A /* MBSSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSSettings.swift; sourceTree = "<group>"; };
+		D80150F31C8BC158008D189A /* MBSBikeStationMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSBikeStationMarker.swift; sourceTree = "<group>"; };
+		D80150F51C8BF252008D189A /* MBSBikeStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSBikeStation.swift; sourceTree = "<group>"; };
+		D823C52E1C92A07F00B66C03 /* MBSSuggestionBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSSuggestionBoxTests.swift; sourceTree = "<group>"; };
+		D826D3111C89AA8C000BE845 /* MBSSuggestionBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSSuggestionBox.swift; sourceTree = "<group>"; };
+		D854AE861C8C479300644F0E /* MBSSettingsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSSettingsTests.swift; sourceTree = "<group>"; };
+		D854AE881C8C49F100644F0E /* MBSBikeStationMarkerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSBikeStationMarkerTests.swift; sourceTree = "<group>"; };
+		D85D16CD1C88F9CA00A8607B /* MelbourneBikeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelbourneBikeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85D16D01C88F9CA00A8607B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D85D16D21C88F9CA00A8607B /* MBSBikeStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBSBikeStationViewController.swift; sourceTree = "<group>"; };
+		D85D16D51C88F9CA00A8607B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D85D16D71C88F9CA00A8607B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D85D16DA1C88F9CA00A8607B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D85D16DC1C88F9CA00A8607B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85D16E11C88F9CA00A8607B /* MelbourneBikeShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelbourneBikeShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85D16E71C88F9CA00A8607B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85D16EC1C88F9CA00A8607B /* MelbourneBikeShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelbourneBikeShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87ADB8A1C8C5FFF00315E41 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D87ADB8C1C8C62F700315E41 /* MBSAnimationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSAnimationButton.swift; sourceTree = "<group>"; };
+		D8A7D3D41C8928E30020D959 /* MBSDatasetFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBSDatasetFetcher.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D85D16CA1C88F9CA00A8607B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB69740D096E5329A6B6161C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85D16DE1C88F9CA00A8607B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C773F3501AA6EF9B82ED7DC9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85D16E91C88F9CA00A8607B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48052E57219F6F659AD336D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E2FE1E281849D9028978173 /* Pods.debug.xcconfig */,
+				978D70CA3086EEC0350774A7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95540E40EF08360BD5F30B2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				560D5736E1D6776C068110CA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D80150F21C8B3353008D189A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D85D16DC1C88F9CA00A8607B /* Info.plist */,
+				D80150EE1C8B31EB008D189A /* Settings.plist */,
+				D87ADB8A1C8C5FFF00315E41 /* Localizable.strings */,
+				D85D16D71C88F9CA00A8607B /* Assets.xcassets */,
+				D85D16D41C88F9CA00A8607B /* Main.storyboard */,
+				D85D16D91C88F9CA00A8607B /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D85D16C41C88F9CA00A8607B = {
+			isa = PBXGroup;
+			children = (
+				D85D16CF1C88F9CA00A8607B /* MelbourneBikeShare */,
+				D85D16E41C88F9CA00A8607B /* MelbourneBikeShareTests */,
+				D85D16CE1C88F9CA00A8607B /* Products */,
+				48052E57219F6F659AD336D0 /* Pods */,
+				95540E40EF08360BD5F30B2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D85D16CE1C88F9CA00A8607B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D85D16CD1C88F9CA00A8607B /* MelbourneBikeShare.app */,
+				D85D16E11C88F9CA00A8607B /* MelbourneBikeShareTests.xctest */,
+				D85D16EC1C88F9CA00A8607B /* MelbourneBikeShareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D85D16CF1C88F9CA00A8607B /* MelbourneBikeShare */ = {
+			isa = PBXGroup;
+			children = (
+				D80150F21C8B3353008D189A /* Resources */,
+				D85D16D01C88F9CA00A8607B /* AppDelegate.swift */,
+				D87ADB8C1C8C62F700315E41 /* MBSAnimationButton.swift */,
+				D80150F51C8BF252008D189A /* MBSBikeStation.swift */,
+				D80150F31C8BC158008D189A /* MBSBikeStationMarker.swift */,
+				D85D16D21C88F9CA00A8607B /* MBSBikeStationViewController.swift */,
+				D8A7D3D41C8928E30020D959 /* MBSDatasetFetcher.swift */,
+				D80150F01C8B3340008D189A /* MBSSettings.swift */,
+				D826D3111C89AA8C000BE845 /* MBSSuggestionBox.swift */,
+			);
+			path = MelbourneBikeShare;
+			sourceTree = "<group>";
+		};
+		D85D16E41C88F9CA00A8607B /* MelbourneBikeShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				D85D16E71C88F9CA00A8607B /* Info.plist */,
+				D854AE881C8C49F100644F0E /* MBSBikeStationMarkerTests.swift */,
+				D854AE861C8C479300644F0E /* MBSSettingsTests.swift */,
+				D823C52E1C92A07F00B66C03 /* MBSSuggestionBoxTests.swift */,
+			);
+			path = MelbourneBikeShareTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D85D16CC1C88F9CA00A8607B /* MelbourneBikeShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85D16F51C88F9CA00A8607B /* Build configuration list for PBXNativeTarget "MelbourneBikeShare" */;
+			buildPhases = (
+				4C5548B55D6DBD95306DC491 /* Check Pods Manifest.lock */,
+				D85D16C91C88F9CA00A8607B /* Sources */,
+				D85D16CA1C88F9CA00A8607B /* Frameworks */,
+				D85D16CB1C88F9CA00A8607B /* Resources */,
+				287ECFB98010267C8E45EEF6 /* Embed Pods Frameworks */,
+				459751461F039163D41A0BDF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MelbourneBikeShare;
+			productName = MelbourneBikeShare;
+			productReference = D85D16CD1C88F9CA00A8607B /* MelbourneBikeShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D85D16E01C88F9CA00A8607B /* MelbourneBikeShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85D16F81C88F9CA00A8607B /* Build configuration list for PBXNativeTarget "MelbourneBikeShareTests" */;
+			buildPhases = (
+				F497A0A4BBA157F08CCECC7A /* Check Pods Manifest.lock */,
+				D85D16DD1C88F9CA00A8607B /* Sources */,
+				D85D16DE1C88F9CA00A8607B /* Frameworks */,
+				D85D16DF1C88F9CA00A8607B /* Resources */,
+				3EBAFA691727376207E2C056 /* Embed Pods Frameworks */,
+				F9CA84747E55E2788FA4ED0D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D85D16E31C88F9CA00A8607B /* PBXTargetDependency */,
+			);
+			name = MelbourneBikeShareTests;
+			productName = MelbourneBikeShareTests;
+			productReference = D85D16E11C88F9CA00A8607B /* MelbourneBikeShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D85D16EB1C88F9CA00A8607B /* MelbourneBikeShareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85D16FB1C88F9CA00A8607B /* Build configuration list for PBXNativeTarget "MelbourneBikeShareUITests" */;
+			buildPhases = (
+				D85D16E81C88F9CA00A8607B /* Sources */,
+				D85D16E91C88F9CA00A8607B /* Frameworks */,
+				D85D16EA1C88F9CA00A8607B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D85D16EE1C88F9CA00A8607B /* PBXTargetDependency */,
+			);
+			name = MelbourneBikeShareUITests;
+			productName = MelbourneBikeShareUITests;
+			productReference = D85D16EC1C88F9CA00A8607B /* MelbourneBikeShareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D85D16C51C88F9CA00A8607B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Homepass;
+				TargetAttributes = {
+					D85D16CC1C88F9CA00A8607B = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = UYLEU7292P;
+					};
+					D85D16E01C88F9CA00A8607B = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D85D16CC1C88F9CA00A8607B;
+					};
+					D85D16EB1C88F9CA00A8607B = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D85D16CC1C88F9CA00A8607B;
+					};
+				};
+			};
+			buildConfigurationList = D85D16C81C88F9CA00A8607B /* Build configuration list for PBXProject "MelbourneBikeShare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D85D16C41C88F9CA00A8607B;
+			productRefGroup = D85D16CE1C88F9CA00A8607B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D85D16CC1C88F9CA00A8607B /* MelbourneBikeShare */,
+				D85D16E01C88F9CA00A8607B /* MelbourneBikeShareTests */,
+				D85D16EB1C88F9CA00A8607B /* MelbourneBikeShareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D85D16CB1C88F9CA00A8607B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87ADB8B1C8C5FFF00315E41 /* Localizable.strings in Resources */,
+				D85D16DB1C88F9CA00A8607B /* LaunchScreen.storyboard in Resources */,
+				D80150EF1C8B31EB008D189A /* Settings.plist in Resources */,
+				D85D16D81C88F9CA00A8607B /* Assets.xcassets in Resources */,
+				D85D16D61C88F9CA00A8607B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85D16DF1C88F9CA00A8607B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85D16EA1C88F9CA00A8607B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		287ECFB98010267C8E45EEF6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EBAFA691727376207E2C056 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		459751461F039163D41A0BDF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C5548B55D6DBD95306DC491 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F497A0A4BBA157F08CCECC7A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9CA84747E55E2788FA4ED0D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D85D16C91C88F9CA00A8607B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D826D3121C89AA8C000BE845 /* MBSSuggestionBox.swift in Sources */,
+				D87ADB8D1C8C62F700315E41 /* MBSAnimationButton.swift in Sources */,
+				D8A7D3D51C8928E30020D959 /* MBSDatasetFetcher.swift in Sources */,
+				D85D16D31C88F9CA00A8607B /* MBSBikeStationViewController.swift in Sources */,
+				D80150F61C8BF252008D189A /* MBSBikeStation.swift in Sources */,
+				D85D16D11C88F9CA00A8607B /* AppDelegate.swift in Sources */,
+				D80150F41C8BC158008D189A /* MBSBikeStationMarker.swift in Sources */,
+				D80150F11C8B3340008D189A /* MBSSettings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85D16DD1C88F9CA00A8607B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D854AE891C8C49F100644F0E /* MBSBikeStationMarkerTests.swift in Sources */,
+				D823C52F1C92A07F00B66C03 /* MBSSuggestionBoxTests.swift in Sources */,
+				D854AE871C8C479300644F0E /* MBSSettingsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85D16E81C88F9CA00A8607B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D85D16E31C88F9CA00A8607B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D85D16CC1C88F9CA00A8607B /* MelbourneBikeShare */;
+			targetProxy = D85D16E21C88F9CA00A8607B /* PBXContainerItemProxy */;
+		};
+		D85D16EE1C88F9CA00A8607B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D85D16CC1C88F9CA00A8607B /* MelbourneBikeShare */;
+			targetProxy = D85D16ED1C88F9CA00A8607B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D85D16D41C88F9CA00A8607B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D85D16D51C88F9CA00A8607B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D85D16D91C88F9CA00A8607B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D85D16DA1C88F9CA00A8607B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D85D16F31C88F9CA00A8607B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D85D16F41C88F9CA00A8607B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D85D16F61C88F9CA00A8607B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2FE1E281849D9028978173 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MelbourneBikeShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.homepass.MelbourneBikeShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		D85D16F71C88F9CA00A8607B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 978D70CA3086EEC0350774A7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MelbourneBikeShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.homepass.MelbourneBikeShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		D85D16F91C88F9CA00A8607B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E2FE1E281849D9028978173 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MelbourneBikeShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.homepass.MelbourneBikeShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MelbourneBikeShare.app/MelbourneBikeShare";
+			};
+			name = Debug;
+		};
+		D85D16FA1C88F9CA00A8607B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 978D70CA3086EEC0350774A7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MelbourneBikeShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.homepass.MelbourneBikeShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MelbourneBikeShare.app/MelbourneBikeShare";
+			};
+			name = Release;
+		};
+		D85D16FC1C88F9CA00A8607B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MelbourneBikeShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.homepass.MelbourneBikeShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MelbourneBikeShare;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D85D16FD1C88F9CA00A8607B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MelbourneBikeShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.homepass.MelbourneBikeShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MelbourneBikeShare;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D85D16C81C88F9CA00A8607B /* Build configuration list for PBXProject "MelbourneBikeShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85D16F31C88F9CA00A8607B /* Debug */,
+				D85D16F41C88F9CA00A8607B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85D16F51C88F9CA00A8607B /* Build configuration list for PBXNativeTarget "MelbourneBikeShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85D16F61C88F9CA00A8607B /* Debug */,
+				D85D16F71C88F9CA00A8607B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85D16F81C88F9CA00A8607B /* Build configuration list for PBXNativeTarget "MelbourneBikeShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85D16F91C88F9CA00A8607B /* Debug */,
+				D85D16FA1C88F9CA00A8607B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85D16FB1C88F9CA00A8607B /* Build configuration list for PBXNativeTarget "MelbourneBikeShareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85D16FC1C88F9CA00A8607B /* Debug */,
+				D85D16FD1C88F9CA00A8607B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D85D16C51C88F9CA00A8607B /* Project object */;
+}

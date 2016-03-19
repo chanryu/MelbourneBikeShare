@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bike Station View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MBSBikeStationViewController" customModule="MelbourneBikeShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnu-tV-N0U" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyX-1w-Hgk" userLabel="Overlay View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGl-0e-fIS" userLabel="Search Area">
+                                <rect key="frame" x="20" y="28" width="560" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search Stations" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wQS-B5-kff">
+                                        <rect key="frame" x="14" y="0.0" width="542" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="AAw-vX-IIh"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wQS-B5-kff" secondAttribute="trailing" constant="4" id="4yt-Dg-zFP"/>
+                                    <constraint firstItem="wQS-B5-kff" firstAttribute="top" secondItem="DGl-0e-fIS" secondAttribute="top" id="PUf-j6-ec0"/>
+                                    <constraint firstAttribute="height" constant="40" id="Vbo-Ym-80B"/>
+                                    <constraint firstItem="wQS-B5-kff" firstAttribute="leading" secondItem="DGl-0e-fIS" secondAttribute="leading" constant="14" id="o9c-0X-zGV"/>
+                                    <constraint firstAttribute="bottom" secondItem="wQS-B5-kff" secondAttribute="bottom" id="ztz-eo-9Y5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYU-oX-BZi" customClass="MBSSuggestionBox" customModule="MelbourneBikeShare" customModuleProvider="target">
+                                <rect key="frame" x="20" y="76" width="560" height="256"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRL-E3-5zJ" userLabel="Refresh Button" customClass="MBSAnimationButton" customModule="MelbourneBikeShare" customModuleProvider="target">
+                                <rect key="frame" x="532" y="532" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="0bI-Dn-Tx8"/>
+                                    <constraint firstAttribute="height" constant="48" id="btE-Qt-Glf"/>
+                                    <constraint firstAttribute="width" constant="48" id="c1x-UI-NNI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="pzX-za-0c6"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Refresh"/>
+                                <connections>
+                                    <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHh-uQ-pzX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rnu-tV-N0U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="5xe-tf-8gc"/>
+                            <constraint firstItem="YYU-oX-BZi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Doj-QB-alZ"/>
+                            <constraint firstItem="DGl-0e-fIS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="GgJ-2w-uqI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rnu-tV-N0U" secondAttribute="trailing" constant="-20" id="IjX-5D-4J9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kRL-E3-5zJ" secondAttribute="bottom" constant="20" id="Iwl-cN-Pxf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rnu-tV-N0U" secondAttribute="bottom" id="NQ9-Ea-G5R"/>
+                            <constraint firstItem="cyX-1w-Hgk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Nay-ne-F7H"/>
+                            <constraint firstItem="DGl-0e-fIS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PyV-hN-BZC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cyX-1w-Hgk" secondAttribute="bottom" id="SM9-Br-r5X"/>
+                            <constraint firstItem="cyX-1w-Hgk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Siz-Bk-Yo4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YYU-oX-BZi" secondAttribute="bottom" constant="268" identifier="SuggestionBottom" id="WAM-Qm-6h8"/>
+                            <constraint firstItem="rnu-tV-N0U" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="aJj-vW-P1q"/>
+                            <constraint firstItem="DGl-0e-fIS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hVz-Uc-bpA"/>
+                            <constraint firstItem="YYU-oX-BZi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lrN-60-eil"/>
+                            <constraint firstItem="kRL-E3-5zJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xAB-TY-kd9"/>
+                            <constraint firstItem="YYU-oX-BZi" firstAttribute="top" secondItem="DGl-0e-fIS" secondAttribute="bottom" constant="8" id="yJL-6y-sAB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cyX-1w-Hgk" secondAttribute="trailing" constant="-20" id="yXU-6r-S74"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_mapView" destination="rnu-tV-N0U" id="n7Z-QJ-Pnw"/>
+                        <outlet property="_overlayView" destination="cyX-1w-Hgk" id="bjp-l0-WkL"/>
+                        <outlet property="_refreshButton" destination="kRL-E3-5zJ" id="VP8-dM-RKT"/>
+                        <outlet property="_searchArea" destination="DGl-0e-fIS" id="ynH-D2-ePa"/>
+                        <outlet property="_searchBox" destination="wQS-B5-kff" id="Z0k-wv-LyJ"/>
+                        <outlet property="_suggestionBox" destination="YYU-oX-BZi" id="pCp-zK-B7l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="317"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Refresh" width="145" height="145"/>
+    </resources>
+</document>
